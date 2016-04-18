@@ -45,140 +45,129 @@
 						<a href="#">МАГАЗИН</a>
 					</li>
 					<li>
-						<a href="#">СРЕДСТВА ДЛЯ УХОДА</a>
+						<p class="active">СРЕДСТВА ДЛЯ УХОДА</p> <!--замена на p и добавление класса active -->
 					</li>
 				</ul>
 			</nav>			
 		</div>	
 		<div class="information-section">
 			<section class="filter">
-				<section class="filter-producer">
-					<h2>ПРОИЗВОДИТЕЛИ:</h2>
-					<ul>
-					<li>
-						<input type="checkbox" name="producer" id="producer-fist">
-	            		<label for="producer-fist">BAXTER OF CALIFORNIA</label>
-					</li>
-					<li>
-						<input type="checkbox" name="producer" id="producer-second">
-	            		<label for="producer-second">MR NATTY</label>
-	            	</li>	
-	            	<li>
-						<input type="checkbox" name="producer" id="producer-third">
-	            		<label for="producer-third">SUAVECITO</label>
-	            	</li>
-	            	<li>
-						<input type="checkbox" name="producer" id="producer-fourth">
-	            		<label for="producer-fourth">MALIN+GOETZ</label>
-	            	</li>
-	            	<li>
-						<input type="checkbox" name="producer" id="producer-fifth">
-	            		<label for="producer-fifth">MURREY'S</label>
-	            	</li>
-	            	<li>
-						<input type="checkbox" name="producer" id="producer-sixth">
-	            		<label for="producer-six">AMERICAN CREW</label>
-	            	</li>
-					</ul>	
-				</section>
-				<section class="filter-group-goods">
-					<h2>ГРУППЫ ТОВАРОВ:</h2>
-					<ul>
+				<form action="URL">    <!--добавлен тег формы -->
+					<section class="filter-producer">
+						<h2>ПРОИЗВОДИТЕЛИ:</h2>
+						<ul>
 						<li>
-							<input type="radio" name="goods" id="goods-firt">
-							<label for="goods-first">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label>
+							<input type="checkbox" name="producer" id="producer-fist">
+		            		<label for="producer-fist">BAXTER OF CALIFORNIA</label>
 						</li>
 						<li>
-							<input type="radio" name="goods" id="goods-second">
-							<label for="goods-second">СРЕДСТВА ДЛЯ УХОДА</label>
-						</li>
-						<li>
-							<input type="radio" name="goods" id="goods-third">
-							<label for="goods-third">АКСЕССУАРЫ</label>
-						</li>
-					</ul>					
-					<button class="btn">ПОКАЗАТЬ</button>
-				</section>
+							<input type="checkbox" name="producer" id="producer-second">
+		            		<label for="producer-second">MR NATTY</label>
+		            	</li>	
+		            	<li>
+							<input type="checkbox" name="producer" id="producer-third">
+		            		<label for="producer-third">SUAVECITO</label>
+		            	</li>
+		            	<li>
+							<input type="checkbox" name="producer" id="producer-fourth">
+		            		<label for="producer-fourth">MALIN+GOETZ</label>
+		            	</li>
+		            	<li>
+							<input type="checkbox" name="producer" id="producer-fifth">
+		            		<label for="producer-fifth">MURREY'S</label>
+		            	</li>
+		            	<li>
+							<input type="checkbox" name="producer" id="producer-sixth">
+		            		<label for="producer-six">AMERICAN CREW</label>
+		            	</li>
+						</ul>	
+					</section>
+					<section class="filter-group-goods">
+						<h2>ГРУППЫ ТОВАРОВ:</h2>
+						<ul>
+							<li>
+								<input type="radio" name="goods" id="goods-firt">
+								<label for="goods-first">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label>
+							</li>
+							<li>
+								<input type="radio" name="goods" id="goods-second">
+								<label for="goods-second">СРЕДСТВА ДЛЯ УХОДА</label>
+							</li>
+							<li>
+								<input type="radio" name="goods" id="goods-third">
+								<label for="goods-third">АКСЕССУАРЫ</label>
+							</li>
+						</ul>					
+						<button type="submit" class="btn">ПОКАЗАТЬ</button>     <!--добавлен тип кнопки sumbit -->
+					</section>
+				</form>
 			</section>
 			<div class="goods-section">
-				<section class="goods-section-item">
+				<article class="goods-section-item">     <!-- один товар - article -->
 					<figure>
 						<img src="http://placehold.it/150x100">
-						<figcaption><p>Набор для путешествий <br> "BAXTER OF CALIFORNIA"</p></figcaption>
+						<figcaption><a href="#">Набор для путешествий <span> "BAXTER OF CALIFORNIA" </span></a></figcaption>  <!-- замена на ссылки, замена тега <br> на <span></span>-->
 					</figure>	
 					<div class="goods-price">
-						<p>2900 р.</p>
+						<span class="goods-price-value">2900 р.</span>
+						<a href="#" class="goods-price-btn">Купить</a><!--Объединены в один блок -->
 					</div>
-					<div class="goods-btn">
-						<a href="#">Купить</a>
-					</div>
-				</section>
-				<section class="goods-section-item">
+				</article>
+				<article class="goods-section-item">
 					<figure>
 						<img src="http://placehold.it/150x100">
-						<figcaption><p>Увлажняющий кондиционер <br> "BAXTER OF CALIFORNIA"</p></figcaption>
+						<figcaption><a href="#">Увлажняющий кондиционер <span> "BAXTER OF CALIFORNIA"</span></a></figcaption>
 					</figure>
 					<div class="goods-price">
-						<p>750 р.</p>
-					</div>	
-					<div class="goods-btn">
-						<a href="#">Купить</a>
+						<span class="goods-price-value">750 р.</p>
+						<a href="#" class="goods-price-btn">Купить</a> <!--Объединены в один блок --> 
 					</div>
-				</section>	
-				<section class="goods-section-item">
+				</article>	
+				<article class="goods-section-item">
 					<figure>
 						<img src="http://placehold.it/150x100">
-						<figcaption><p>Гель для волос <br> "SUAVECITO"</p></figcaption>
+						<figcaption><a href="#">Гель для волос <span> "SUAVECITO"</span></a></figcaption>
 					</figure>
 					<div class="goods-price">
-						<p>290 р.</p>
-					</div>
-					<div class="goods-btn">
-						<a href="#">Купить</a>
+						<span class="goods-price-value">290 р.</span>
+						<a href="#" class="goods-price-btn">Купить</a> <!--Объединены в один блок -->
 					</div>	
-				</section>	
-				<section class="goods-section-item">
+				</article>	
+				<article class="goods-section-item">
 					<figure>
 						<img src="http://placehold.it/150x100">
-						<figcaption><p>Гель для укладки волос <br> "AMERICAN CREW"</p></figcaption>
+						<figcaption><a href="#">Гель для укладки волос <span> "AMERICAN CREW"</span></a></figcaption>
 					</figure>
 					<div class="goods-price">
-						<p>500 р.</p>
-					</div>
-					<div class="goods-btn">
-						<a href="#">Купить</a>
+						<span class="goods-price-value">500 р.</span>
+						<a href="#" class="goods-btn">Купить</a>  <!--Объединены в один блок -->
 					</div>	
-				</section>	
-				<section class="goods-section-item">
+				</article>	
+				<article class="goods-section-item">
 					<figure>
 						<img src="http://placehold.it/150x100">
-						<figcaption><p>Гель для волос <br> "AMERICAN CREW"</p></figcaption>
+						<figcaption><a href="#">Гель для волос <span> "AMERICAN CREW"</span></a></figcaption>
 					</figure>
 					<div class="goods-price">
-						<p>300 р.</p>
-					</div>	
-					<div class="goods-btn">
-						<a href="#">Купить</a>
+						<span class="goods-price-value">300 р.</span>
+						<a href="#" class="goods-price-btn">Купить</a> <!--Объединены в один блок -->
 					</div>
-				</section>	
-				</div>
-				<section class="goods-section-item">
+				</article>	
+				<article class="goods-section-item">
 					<figure>
 						<img src="http://placehold.it/150x100">
-						<figcaption><p>Набор для бритья <br> "BAXTER OF CALIFORNIA"</p></figcaption>
+						<figcaption><a href="#">Набор для бритья <span> "BAXTER OF CALIFORNIA"</span></a></figcaption>
 					</figure>
 					<div class="goods-price">
-						<p>3900 р.</p>
-					</div>	
-					<div class="goods-btn">
-						<a href="#">Купить</a>
+						<span class="goods-price-value">3900 р.</span>
+						<a href="#" class="goods-price-btn">Купить</a> <!--Объединены в один блок -->
 					</div>
-				</section>	
+				</article>	
 			</div>	
 		</div>
 		<div class="paginator">
             <a href="#">1</a>
-            <a href="#">2</a>
+            <a href="#" class="active">2</a> <!-- добавлен класс active-->
             <a href="#">3</a>
             <a href="#">4</a>
         </div>	
